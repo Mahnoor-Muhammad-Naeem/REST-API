@@ -29,14 +29,6 @@ CRUD stands for:
 ---
 
 
-
-# REST API with Express.js & Joi
-
-A simple REST API built using Node.js, Express.js, and Joi for input validation.  
-This demo covers all CRUD operations: Create, Read, Update, Delete.
-
----
-
 # Project Structure
 
 Examples
@@ -74,14 +66,10 @@ Delete (DELETE)
 DELETE /api/courses/1
 
 
-# REST API with Express.js & Joi
 
-A simple **REST API** built using **Node.js, Express.js, and Joi** for input validation. This demo covers all CRUD operations: **Create, Read, Update, Delete**.
 
----
-
-## 📂 Project Structure
 ```
+## 📂 Project Structure
 rest-api-example/
 │── index.js       # Main server file
 │── package.json   # Dependencies and scripts
