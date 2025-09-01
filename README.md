@@ -1,5 +1,51 @@
 # REST-API
 A REST API (Representational State Transfer) is a way for applications to communicate over HTTP by treating data as resources accessible through unique URLs. Clients interact with these resources using standard HTTP methods like GET, POST, PUT, and DELETE in a stateless manner.
+📌 CRUD Operations in REST API
+
+CRUD stands for:
+- C → Create  
+- R → Read  
+- U → Update  
+- D → Delete  
+
+---
+
+🛠 CRUD with HTTP Methods
+
+| Operation | Description                         | HTTP Method | Example Endpoint       |
+|-----------|-------------------------------------|-------------|------------------------|
+| Create    | Add new data to the server          | POST        | POST /api/courses      |
+| Read      | Retrieve existing data              | GET         | GET /api/courses <br> GET /api/courses/:id |
+| Update    | Modify existing data                | PUT         | PUT /api/courses/:id   |
+| Delete    | Remove existing data from the server | DELETE     | DELETE /api/courses/:id |
+
+---
+
+📘 Examples
+
+Create (POST)
+```http
+POST /api/courses
+Content-Type: application/json
+
+{
+  "name": "New Course"
+}
+📘 Read (GET)
+```http
+GET /api/courses
+📘 Update (PUT)
+```http
+PUT /api/courses/1
+Content-Type: application/json
+
+{
+  "name": "Updated Course"
+}
+📘 Delete (DELETE)
+```http
+DELETE /api/courses/1
+
 
 # REST API with Express.js & Joi
 
