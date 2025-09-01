@@ -7,11 +7,6 @@ This demo covers all CRUD operations: **Create, Read, Update, Delete**.
 
 ---
 
-## 📂 Project Structure
-rest-api-example/
-│── index.js # Main server file
-│── package.json # Dependencies and scripts
-│── README.md # Documentation
 📌 CRUD Operations in REST API
 
 CRUD stands for:
@@ -33,9 +28,23 @@ CRUD stands for:
 
 ---
 
-📘 Examples
+
+
+# REST API with Express.js & Joi
+
+A simple REST API built using Node.js, Express.js, and Joi for input validation.  
+This demo covers all CRUD operations: Create, Read, Update, Delete.
+
+---
+
+# Project Structure
+
+Examples
+
+```http
 
 Create (POST)
+
 ```http
 POST /api/courses
 Content-Type: application/json
@@ -43,10 +52,14 @@ Content-Type: application/json
 {
   "name": "New Course"
 }
-📘 Read (GET)
+
+Read (GET)
+
 ```http
 GET /api/courses
-📘 Update (PUT)
+
+Update (PUT)
+
 ```http
 PUT /api/courses/1
 Content-Type: application/json
@@ -54,7 +67,9 @@ Content-Type: application/json
 {
   "name": "Updated Course"
 }
-📘 Delete (DELETE)
+
+Delete (DELETE)
+
 ```http
 DELETE /api/courses/1
 
@@ -408,8 +423,5 @@ curl -s -X DELETE http://localhost:3000/api/courses/3 | jq
 - Use environment variables for config (ports, DB URLs) via `dotenv`.
 
 ---
-
-## 🪪 License
-MIT
 
 
