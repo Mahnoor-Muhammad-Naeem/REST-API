@@ -7,7 +7,7 @@ This demo covers all CRUD operations: **Create, Read, Update, Delete**.
 
 ---
 
-📌 CRUD Operations in REST API
+CRUD Operations in REST API
 
 CRUD stands for:
 - C → Create  
@@ -17,7 +17,7 @@ CRUD stands for:
 
 ---
 
-🛠 CRUD with HTTP Methods
+CRUD with HTTP Methods
 
 | Operation | Description                         | HTTP Method | Example Endpoint       |
 |-----------|-------------------------------------|-------------|------------------------|
@@ -64,13 +64,13 @@ DELETE /api/courses/1
 
 ```
 
-## 📂 Project Structure
+## Project Structure
 rest-api-example/  
 index.js       # Main server file  
 package.json   # Dependencies and scripts  
 README.md      # Documentation (this file)  
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1️⃣ Initialize npm project
 ```bash
@@ -122,7 +122,7 @@ By default, the server runs on: `http://localhost:3000`
 
 ---
 
-## 🧠 Validation Rules
+## Validation Rules
 - Every course must have a `name` field.
 - `name` must be a **string** with **at least 3 characters**.
 - On validation failure, the API returns:
@@ -132,12 +132,12 @@ By default, the server runs on: `http://localhost:3000`
 
 ---
 
-## 🛠 API Endpoints
+## API Endpoints
 
 ### 1) Home
 **GET /**
 ```text
-Welcome to the REST API Example 🚀
+Welcome to the REST API Example 
 ```
 
 ### 2) Get all courses
@@ -193,7 +193,7 @@ Response:
 
 ---
 
-## 🔧 `index.js`
+## `index.js`
 
 > **ESM version (with `type: "module"` in package.json).** If you prefer CommonJS, a variant is included below.
 
@@ -225,7 +225,7 @@ function validateCourse(payload) {
 
 // Home
 app.get('/', (req, res) => {
-  res.type('text').send('Welcome to the REST API Example 🚀');
+  res.type('text').send('Welcome to the REST API Example');
 });
 
 // Get all courses
@@ -313,7 +313,7 @@ function validateCourse(payload) {
 }
 
 app.get('/', (req, res) => {
-  res.type('text').send('Welcome to the REST API Example 🚀');
+  res.type('text').send('Welcome to the REST API Example');
 });
 
 app.get('/api/courses', (req, res) => {
@@ -366,7 +366,7 @@ app.listen(PORT, () => console.log(`Server listening on http://localhost:${PORT}
 
 ---
 
-## 🧪 Quick cURL Tests
+## Quick cURL Tests
 ```bash
 # List all courses
 curl -s http://localhost:3000/api/courses | jq
@@ -395,7 +395,7 @@ curl -s -X DELETE http://localhost:3000/api/courses/3 | jq
 
 ---
 
-## ✅ Notes & Tips
+## Notes & Tips
 - This demo uses an **in-memory array**; data resets on restart. Swap with a DB (e.g., MongoDB, Postgres) for persistence.
 - Prefer **201 Created** for successful POSTs.
 - Always return **JSON** for API responses (including errors) for consistency.
