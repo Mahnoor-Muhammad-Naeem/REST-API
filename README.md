@@ -28,7 +28,6 @@ CRUD stands for:
 
 ---
 
-
 # Project Structure
 
 Examples
@@ -64,9 +63,6 @@ Delete (DELETE)
 
 ```http
 DELETE /api/courses/1
-
-
-
 
 ```
 ## 📂 Project Structure
@@ -411,5 +407,3 @@ curl -s -X DELETE http://localhost:3000/api/courses/3 | jq
 - Use environment variables for config (ports, DB URLs) via `dotenv`.
 
 ---
-
-
