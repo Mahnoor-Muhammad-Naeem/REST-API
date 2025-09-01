@@ -1,5 +1,17 @@
 # REST-API
 A REST API (Representational State Transfer) is a way for applications to communicate over HTTP by treating data as resources accessible through unique URLs. Clients interact with these resources using standard HTTP methods like GET, POST, PUT, and DELETE in a stateless manner.
+# REST API with Express.js & Joi
+
+A simple **REST API** built using **Node.js, Express.js, and Joi** for input validation.  
+This demo covers all CRUD operations: **Create, Read, Update, Delete**.
+
+---
+
+## 📂 Project Structure
+rest-api-example/
+│── index.js # Main server file
+│── package.json # Dependencies and scripts
+│── README.md # Documentation
 📌 CRUD Operations in REST API
 
 CRUD stands for:
