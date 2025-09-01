@@ -28,9 +28,7 @@ CRUD stands for:
 
 ---
 
-# Project Structure
-
-Examples
+# Examples
 
 ```http
 
@@ -65,14 +63,12 @@ Delete (DELETE)
 DELETE /api/courses/1
 
 ```
-## 📂 Project Structure
-rest-api-example/
-│── index.js       # Main server file
-│── package.json   # Dependencies and scripts
-│── README.md      # Documentation (this file)
-```
 
----
+## 📂 Project Structure
+rest-api-example/  
+index.js       # Main server file  
+package.json   # Dependencies and scripts  
+README.md      # Documentation (this file)  
 
 ## 🚀 Getting Started
 
